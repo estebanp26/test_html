@@ -1,0 +1,40 @@
+body{background-color: black;
+
+}
+
+body main{
+    display: flex;
+    flex-direction: row;
+}
+
+body main header ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+h1{
+color: white;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+h2{
+    color: white;
+    display:  flex;
+}
+
+h3{
+    color:  white;
+    display: flex;
+}
+
+ 
+ p{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    
