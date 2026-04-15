@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo — Eclipsa</title>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo-area">
+            <img src="logo1.jpg" alt="Eclipsa Logo" class="logo-img">
+            <span class="logo-text">ECLIPSA</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#tienda">Tienda</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="index.html#carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO CATÁLOGO ===== -->
+    <section class="page-hero">
+        <h1>Catálogo</h1>
+        <p>Toda la colección Eclipsa — piezas diseñadas para quienes no necesitan atención para destacar.</p>
+    </section>
+
+    <!-- ===== GRID CATÁLOGO ===== -->
+    <main>
+        <section class="catalogo-full">
+
+            <div class="filter-bar">
+                <button class="filter-btn active">Todo</button>
+                <button class="filter-btn">Tops</button>
+                <button class="filter-btn">Bottoms</button>
+                <button class="filter-btn">Accesorios</button>
+            </div>
+
+            <div class="cards-grid wide">
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 01">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 01</span>
+                        <span class="card-price">$120.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 02">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 02</span>
+                        <span class="card-price">$95.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 03">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 03</span>
+                        <span class="card-price">$110.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 04">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 04</span>
+                        <span class="card-price">$85.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 05">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 05</span>
+                        <span class="card-price">$130.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <img src="imagen1.jpg" alt="Pieza 06">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-name">Pieza 06</span>
+                        <span class="card-price">$75.000</span>
+                    </div>
+                    <button class="btn-secondary">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>© 2024 Eclipsa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Filtros de categoría (visual)
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
